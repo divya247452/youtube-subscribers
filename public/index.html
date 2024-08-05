@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Youtube Subscribers</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Welcome to Youtube Subscribers App!</h1>
+        <p>This is served from the root URL.</p>
+        <button>
+            <a href="/api/subscribers">Get Subscribers</a>
+        </button>
+        <br>
+        <button>
+            <a href="/api/subscribers/names">Get Subscribers name</a>
+        </button>
+        <br>
+        <div id="id-div">
+            <label for="subscriberId">Enter Subscriber ID:</label>
+            <input type="text" id="subscriberId" name="subscriberId" required>
+            <button id="getUsingId"><a id="fetchSubscriberById" href="">Get the subscriber</a></button>
+        </div>
+        <div id="api-info">
+            <h2>API Information</h2>
+            <p>The APIs provided by this application are as follows:</p>
+            <ul>
+                <li><strong>GET /subscribers:</strong> Fetches a list of all subscribers from the database.</li>
+                <li><strong>GET /subscribers/names:</strong> Retrieves an array containing the names and subscribed channels of subscribers.</li>
+                <li><strong>GET /subscribers/:id:</strong> Provides details of a subscriber identified by the given ID.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        &copy;2024, Divya Pratap
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
